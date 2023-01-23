@@ -11,7 +11,7 @@ spring:
     platform: "postgres"
     url: "jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${DB_NAME:pre-test}"
     username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    password: ${DB_PASSWORD:}
     hikari:
       max-lifetime: 240000 # in miliseconds
       minimum-idle: ${DB_MIN_POOL:0}
